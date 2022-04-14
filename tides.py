@@ -2,14 +2,13 @@
 #   Purpose: Scrape a field from a url and return the time and height for each daylight low tide.
 #   inputs: One place name(city, state)
 #   Outputs: time and height for each place name's daylight lowtide -> Field Output will be text(place name, time, height)
-#   Assumptions: Python Interpreter is 3.8 in a virtual python environment using PyCharm IDE with pytest, markupsafe, lxml and requests libs installed in venv
+#   Assumptions: Python Interpreter is 3.8 in a virtual python environment using PyCharm IDE with pytest, lxml and requests libs installed in venv
 #   Use: Import the getTidalInfo function(from tides import getTidalInfo),
 #   then call the function with a string containing the place ... getTidalInfo('Some City, Some State')
 #   Testing: Run "pytest -q tides.py" in top project directory
 
 from lxml import html
 import requests
-from markupsafe import Markup
 import re
 
 
